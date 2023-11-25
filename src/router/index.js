@@ -16,6 +16,12 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/AkunView.vue"),
   },
   {
+    path: "/tryoutskd",
+    name: "tryoutskd",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+  },
+  {
     path: "/inbox",
     name: "inbox",
     component: () =>
