@@ -3,33 +3,33 @@
     <div class="sidebar sidebar-collapse" id="sidebar">
       <div class="sidebar__menu-group">
         <ul class="sidebar_nav">
-          <li>
-            <router-link to="/" class="active">
+          <li :class="currentRouteName == '/' ? 'active' : ''">
+            <router-link to="/">
               <span class="nav-icon uil uil-create-dashboard"></span>
               <span class="menu-text">Dashboard</span>
               <!-- <span class="toggle-icon"></span> -->
             </router-link>
           </li>
-          <li>
-            <router-link to="/tryoutskd" class="">
+          <li :class="currentRouteName == '/tryoutskd' ? 'active' : ''">
+            <router-link to="/tryoutskd">
               <span class="nav-icon uil uil-clipboard-notes"></span>
               <span class="menu-text">Try Out SKD CPNS</span>
             </router-link>
           </li>
-          <li>
-            <router-link to="/pembayaran" class="">
-              <span class="nav-icon uil uil-check-square"></span>
-              <span class="menu-text">Pembayaran</span>
+          <li :class="currentRouteName == '/materiskd' ? 'active' : ''">
+            <router-link to="/materiskd">
+              <span class="nav-icon uil uil-meeting-board"></span>
+              <span class="menu-text">Materi SKD</span>
             </router-link>
           </li>
-          <li>
-            <router-link to="/akun" class="">
+          <li :class="currentRouteName == '/akun' ? 'active' : ''">
+            <router-link to="/akun">
               <span class="nav-icon uil uil-users-alt"></span>
               <span class="menu-text">Akun</span>
             </router-link>
           </li>
-          <li class="">
-            <router-link to="/testimoni" class="">
+          <li :class="currentRouteName == '/testimoni' ? 'active' : ''">
+            <router-link to="/testimoni">
               <span class="nav-icon uil uil-book-open"></span>
               <span class="menu-text">Testimoni</span>
             </router-link>
@@ -41,7 +41,24 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    msg: String,
+  },
+  // data() {
+  //   return {
+  //     currentRouteName: this.$router.currentRoute.value.path,
+  //   };
+  // },
+  // mounted() {
+  //   console.log(this.currentRouteName);
+  // },
+  computed: {
+    currentRouteName() {
+      return this.$router.currentRoute.value.path;
+    },
+  },
+};
 </script>
 
 <style></style>
