@@ -4,35 +4,35 @@
       <div class="sidebar__menu-group">
         <ul class="sidebar_nav">
           <li>
-            <a href="#" class="active">
+            <router-link to="/" class="active">
               <span class="nav-icon uil uil-create-dashboard"></span>
               <span class="menu-text">Dashboard</span>
               <!-- <span class="toggle-icon"></span> -->
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="#" class="">
+            <router-link to="/tryoutskd" class="">
               <span class="nav-icon uil uil-clipboard-notes"></span>
               <span class="menu-text">Try Out SKD CPNS</span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="to-do.html">
+            <router-link to="/pembayaran" class="">
               <span class="nav-icon uil uil-check-square"></span>
               <span class="menu-text">Pembayaran</span>
-            </a>
+            </router-link>
           </li>
           <li>
-            <a href="to-do.html">
+            <router-link to="/akun" class="">
               <span class="nav-icon uil uil-users-alt"></span>
               <span class="menu-text">Akun</span>
-            </a>
+            </router-link>
           </li>
           <li class="">
-            <a href="testimonial.html">
+            <router-link to="/testimoni" class="">
               <span class="nav-icon uil uil-book-open"></span>
               <span class="menu-text">Testimoni</span>
-            </a>
+            </router-link>
           </li>
         </ul>
       </div>

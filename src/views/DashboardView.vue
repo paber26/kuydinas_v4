@@ -9,11 +9,8 @@
               <div class="breadcrumb-action justify-content-center flex-wrap">
                 <nav aria-label="breadcrumb">
                   <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
+                    <li class="breadcrumb-item active">
                       <a href="#"><i class="uil uil-estate"></i>Dashboard</a>
-                    </li>
-                    <li class="breadcrumb-item active" aria-current="page">
-                      Demo 2
                     </li>
                   </ol>
                 </nav>
@@ -29,14 +26,14 @@
                 class="ap-po-details-content d-flex flex-wrap justify-content-between w-100"
               >
                 <div class="ap-po-details__titlebar">
-                  <p>Total Products</p>
+                  <p>Total Kunjungan</p>
                   <h1>100+</h1>
                   <div class="ap-po-details-time">
                     <span class="color-success"
                       ><i class="las la-arrow-up"></i>
                       <strong>25.36%</strong></span
                     >
-                    <small>Since last month</small>
+                    <small>Sejak bulan lalu</small>
                   </div>
                 </div>
                 <div class="ap-po-details__icon-area color-primary">
@@ -56,14 +53,14 @@
                 class="ap-po-details-content d-flex flex-wrap justify-content-between w-100"
               >
                 <div class="ap-po-details__titlebar">
-                  <p>Total Orders</p>
+                  <p>Total Akun</p>
                   <h1>30,825</h1>
                   <div class="ap-po-details-time">
                     <span class="color-success"
                       ><i class="las la-arrow-up"></i>
                       <strong>25.36%</strong></span
                     >
-                    <small>Since last month</small>
+                    <small>Sejak bulan lalu</small>
                   </div>
                 </div>
                 <div class="ap-po-details__icon-area color-secondary">
@@ -83,18 +80,18 @@
                 class="ap-po-details-content d-flex flex-wrap justify-content-between w-100"
               >
                 <div class="ap-po-details__titlebar">
-                  <p>Total Sales</p>
-                  <h1>$30,825</h1>
+                  <p>Total Pendapatan</p>
+                  <h1>Rp. 3.000K</h1>
                   <div class="ap-po-details-time">
                     <span class="color-danger"
                       ><i class="las la-arrow-down"></i>
                       <strong>25.36%</strong></span
                     >
-                    <small>Since last month</small>
+                    <small>Sejak bulan lalu</small>
                   </div>
                 </div>
                 <div class="ap-po-details__icon-area color-success">
-                  <i class="uil uil-usd-circle"></i>
+                  <i class="uil uil-money-bill"></i>
                 </div>
               </div>
             </div>
@@ -110,571 +107,28 @@
                 class="ap-po-details-content d-flex flex-wrap justify-content-between w-100"
               >
                 <div class="ap-po-details__titlebar">
-                  <p>New Customers</p>
-                  <h1>30,825</h1>
+                  <p>Total Testimoni</p>
+                  <h1>103</h1>
                   <div class="ap-po-details-time">
                     <span class="color-success"
                       ><i class="las la-arrow-up"></i>
                       <strong>25.36%</strong></span
                     >
-                    <small>Since last month</small>
+                    <small>Sejak bulan lalu</small>
                   </div>
                 </div>
                 <div class="ap-po-details__icon-area color-info">
-                  <i class="uil uil-tachometer-fast"></i>
+                  <i class="uil uil-books"></i>
                 </div>
               </div>
             </div>
             <!-- Card 4 End  -->
           </div>
 
-          <div class="col-xxl-6 mb-25">
-            <div class="card revenueChartTwo border-0">
-              <div class="card-header border-0">
-                <h6>Sales Revenue</h6>
-                <div class="card-extra">
-                  <ul class="card-tab-links nav-tabs nav" role="tablist">
-                    <li>
-                      <a
-                        class="active"
-                        href="#tl_revenue-today"
-                        data-bs-toggle="tab"
-                        id="tl_revenue-today-tab"
-                        role="tab"
-                        aria-selected="false"
-                        >Today</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#tl_revenue-week"
-                        data-bs-toggle="tab"
-                        id="tl_revenue-week-tab"
-                        role="tab"
-                        aria-selected="false"
-                        >Week</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#tl_revenue-month"
-                        data-bs-toggle="tab"
-                        id="tl_revenue-month-tab"
-                        role="tab"
-                        aria-selected="false"
-                        >Month</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <!-- ends: .card-header -->
-              <div class="card-body pt-0 pb-40">
-                <div class="tab-content">
-                  <div
-                    class="tab-pane fade active show"
-                    id="tl_revenue-today"
-                    role="tabpanel"
-                    aria-labelledby="tl_revenue-today-tab"
-                  >
-                    <div
-                      class="cashflow-display cashflow-display2 d-flex"
-                    ></div>
-                    <!-- ends: .performance-stats -->
-
-                    <div class="wp-chart">
-                      <div class="parentContainer">
-                        <div>
-                          <canvas id="saleRevenueToday"></canvas>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- ends: .performance-stats -->
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="tl_revenue-week"
-                    role="tabpanel"
-                    aria-labelledby="tl_revenue-week-tab"
-                  >
-                    <div
-                      class="cashflow-display cashflow-display2 d-flex"
-                    ></div>
-                    <!-- ends: .performance-stats -->
-
-                    <div class="wp-chart">
-                      <div class="parentContainer">
-                        <div>
-                          <canvas id="saleRevenueWeek"></canvas>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- ends: .performance-stats -->
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="tl_revenue-month"
-                    role="tabpanel"
-                    aria-labelledby="tl_revenue-month-tab"
-                  >
-                    <div
-                      class="cashflow-display cashflow-display2 d-flex"
-                    ></div>
-                    <!-- ends: .performance-stats -->
-
-                    <div class="wp-chart">
-                      <div class="parentContainer">
-                        <div>
-                          <canvas id="saleRevenueMonth"></canvas>
-                        </div>
-                      </div>
-                    </div>
-
-                    <!-- ends: .performance-stats -->
-                  </div>
-                </div>
-              </div>
-              <!-- ends: .card-body -->
-            </div>
-          </div>
-
-          <div class="col-xxl-6 mb-25">
-            <div class="card border-0 px-25 h-100">
-              <div class="card-header px-0 border-0">
-                <h6>Source Of Revenue Generated</h6>
-                <div class="dropdown dropleft">
-                  <a
-                    href="#"
-                    role="button"
-                    id="todo12"
-                    data-bs-toggle="dropdown"
-                    aria-haspopup="true"
-                    aria-expanded="false"
-                  >
-                    <img
-                      src="img/svg/more-horizontal.svg"
-                      alt="more-horizontal"
-                      class="svg"
-                    />
-                  </a>
-                  <div class="dropdown-menu" aria-labelledby="todo12">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </div>
-                </div>
-              </div>
-              <div class="p-0 card-body">
-                <div class="revenueSourceChart px-0">
-                  <div class="parentContainer position-relative">
-                    <div class="apexpie ms-md-n50">
-                      <div class="apexPieToday"></div>
-                    </div>
-                  </div>
-                  <div class="chart-content__details">
-                    <div class="chart-content__single">
-                      <span class="icon color-facebook">
-                        <span class="uil uil-facebook-f"></span>
-                      </span>
-                      <span class="label">Facebook</span>
-                      <span class="data">$4621</span>
-                    </div>
-                    <div class="chart-content__single">
-                      <span class="icon color-twitter">
-                        <span class="uil uil uil-twitter"></span>
-                      </span>
-                      <span class="label">twitter</span>
-                      <span class="data">$3621</span>
-                    </div>
-                    <div class="chart-content__single">
-                      <span class="icon color-secondary">
-                        <span class="uil uil uil-google"></span>
-                      </span>
-                      <span class="label">google</span>
-                      <span class="data">$8945</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-xxl-4 mb-25">
-            <div class="card border-0 px-25">
-              <div class="card-header px-0 border-0">
-                <h6>New Product</h6>
-                <div class="card-extra">
-                  <ul class="card-tab-links nav-tabs nav" role="tablist">
-                    <li>
-                      <a
-                        class="active"
-                        href="#t_selling-today"
-                        data-bs-toggle="tab"
-                        id="t_selling-today-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Today</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#t_selling-week"
-                        data-bs-toggle="tab"
-                        id="t_selling-week-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Week</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#t_selling-month"
-                        data-bs-toggle="tab"
-                        id="t_selling-month-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Month</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </div>
-              <div class="card-body p-0">
-                <div class="tab-content">
-                  <div
-                    class="tab-pane fade active show"
-                    id="t_selling-today"
-                    role="tabpanel"
-                    aria-labelledby="t_selling-today-tab"
-                  >
-                    <div class="selling-table-wrap">
-                      <div class="table-responsive">
-                        <table class="table table--default table-borderless">
-                          <thead>
-                            <tr>
-                              <th>PRDUCTS NAME</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="radius-xs img-fluid order-bg-opacity-primary"
-                                    src="img/giorgio.png"
-                                    alt="img"
-                                  />
-                                  <span>UV Protected Sunglass</span>
-                                </div>
-                              </td>
-                              <td>$38,536</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="radius-xs img-fluid order-bg-opacity-primary"
-                                    src="img/headphone.png"
-                                    alt="img"
-                                  />
-                                  <span>Black Headphone</span>
-                                </div>
-                              </td>
-                              <td>$20,573</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="radius-xs img-fluid order-bg-opacity-primary"
-                                    src="img/shoes.png"
-                                    alt="img"
-                                  />
-                                  <span>Nike Shoes</span>
-                                </div>
-                              </td>
-                              <td>$17,457</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="radius-xs img-fluid order-bg-opacity-primary"
-                                    src="img/mac-pro.png"
-                                    alt="img"
-                                  />
-                                  <span>15" Mackbook Pro</span>
-                                </div>
-                              </td>
-                              <td>$15,354</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="radius-xs img-fluid order-bg-opacity-primary"
-                                    src="img/creativ-bag.png"
-                                    alt="img"
-                                  />
-                                  <span>Women Bag</span>
-                                </div>
-                              </td>
-                              <td>$12,354</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="t_selling-week"
-                    role="tabpanel"
-                    aria-labelledby="t_selling-week-tab"
-                  >
-                    <div class="selling-table-wrap">
-                      <div class="table-responsive">
-                        <table class="table table--default table-borderless">
-                          <thead>
-                            <tr>
-                              <th>PRDUCTS NAME</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/287.png"
-                                    alt="img"
-                                  />
-                                  <span>Samsung Galaxy S8 256GB</span>
-                                </div>
-                              </td>
-                              <td>$60,258</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid"
-                                    src="img/165.png"
-                                    alt="img"
-                                  />
-                                  <span>Half Sleeve Shirt</span>
-                                </div>
-                              </td>
-                              <td>$2,483</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/166.png"
-                                    alt="img"
-                                  />
-                                  <span>Marco Shoes</span>
-                                </div>
-                              </td>
-                              <td>$19,758</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/315.png"
-                                    alt="img"
-                                  />
-                                  <span>15" Mackbook Pro</span>
-                                </div>
-                              </td>
-                              <td>$197,458</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/506.png"
-                                    alt="img"
-                                  />
-                                  <span>Apple iPhone X</span>
-                                </div>
-                              </td>
-                              <td>115,254</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="tab-pane fade"
-                    id="t_selling-month"
-                    role="tabpanel"
-                    aria-labelledby="t_selling-month-tab"
-                  >
-                    <div class="selling-table-wrap">
-                      <div class="table-responsive">
-                        <table class="table table--default table-borderless">
-                          <thead>
-                            <tr>
-                              <th>PRDUCTS NAME</th>
-                              <th>Price</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/287.png"
-                                    alt="img"
-                                  />
-                                  <span>Samsung Galaxy S8 256GB</span>
-                                </div>
-                              </td>
-                              <td>$60,258</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid"
-                                    src="img/165.png"
-                                    alt="img"
-                                  />
-                                  <span>Half Sleeve Shirt</span>
-                                </div>
-                              </td>
-                              <td>$2,483</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/166.png"
-                                    alt="img"
-                                  />
-                                  <span>Marco Shoes</span>
-                                </div>
-                              </td>
-                              <td>$19,758</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/315.png"
-                                    alt="img"
-                                  />
-                                  <span>15" Mackbook Pro</span>
-                                </div>
-                              </td>
-                              <td>$197,458</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <img
-                                    class="me-15 wh-34 img-fluid order-bg-opacity-primary"
-                                    src="img/506.png"
-                                    alt="img"
-                                  />
-                                  <span>Apple iPhone X</span>
-                                </div>
-                              </td>
-                              <td>115,254</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div class="col-xxl-8 mb-25">
             <div class="card border-0 px-25">
               <div class="card-header px-0 border-0">
-                <h6>Best Seller</h6>
-                <div class="card-extra">
-                  <ul class="card-tab-links nav-tabs nav" role="tablist">
-                    <li>
-                      <a
-                        class="active"
-                        href="#t_selling-today222"
-                        data-bs-toggle="tab"
-                        id="t_selling-today222-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Today</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#t_selling-week222"
-                        data-bs-toggle="tab"
-                        id="t_selling-week222-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Week</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        href="#t_selling-month333"
-                        data-bs-toggle="tab"
-                        id="t_selling-month333-tab"
-                        role="tab"
-                        aria-selected="true"
-                        >Month</a
-                      >
-                    </li>
-                  </ul>
-                </div>
+                <h6>Sedang mengerjakan</h6>
               </div>
               <div class="card-body p-0">
                 <div class="tab-content">
@@ -689,11 +143,10 @@
                         <table class="table table--default table-borderless">
                           <thead>
                             <tr>
-                              <th>Seller name</th>
-                              <th>Company</th>
-                              <th>Product</th>
-                              <th>Revenue</th>
-                              <th>Status</th>
+                              <th>Nama akun</th>
+                              <th class="text-center">Try Out</th>
+                              <th class="text-center">Jumlah Koin</th>
+                              <th class="text-center">Jam Mulai</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -714,98 +167,9 @@
                                   <span>Robert Clinton</span>
                                 </div>
                               </td>
-                              <td>Samsung</td>
-                              <td>Smart Phone</td>
-                              <td>$38,536</td>
-                              <td>Done</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <div
-                                    class="selling-product-img-wrapper order-bg-opacity-primary align-items-end"
-                                  >
-                                    <img
-                                      class="img-fluid"
-                                      src="img/author/robert-2.png"
-                                      alt="img"
-                                    />
-                                  </div>
-                                  <span>Michael Johnson </span>
-                                </div>
-                              </td>
-                              <td>Asus</td>
-                              <td>Laptop</td>
-                              <td>$20,573</td>
-                              <td>Done</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <div
-                                    class="selling-product-img-wrapper order-bg-opacity-secondary align-items-end"
-                                  >
-                                    <img
-                                      class="img-fluid"
-                                      src="img/author/robert-3.png"
-                                      alt="img"
-                                    />
-                                  </div>
-                                  <span>Daniel White</span>
-                                </div>
-                              </td>
-                              <td>Google</td>
-                              <td>Watch</td>
-                              <td>$17,457</td>
-                              <td>Pending</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <div
-                                    class="selling-product-img-wrapper order-bg-opacity-success align-items-end"
-                                  >
-                                    <img
-                                      class="img-fluid"
-                                      src="img/author/robert-4.png"
-                                      alt="img"
-                                    />
-                                  </div>
-                                  <span>Chris Barin </span>
-                                </div>
-                              </td>
-                              <td>Apple</td>
-                              <td>Computer</td>
-                              <td>$15,354</td>
-                              <td>Done</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <div
-                                  class="selling-product-img d-flex align-items-center"
-                                >
-                                  <div
-                                    class="selling-product-img-wrapper order-bg-opacity-info align-items-end"
-                                  >
-                                    <img
-                                      class="img-fluid"
-                                      src="img/author/robert-5.png"
-                                      alt="img"
-                                    />
-                                  </div>
-                                  <span>Daniel Pink</span>
-                                </div>
-                              </td>
-                              <td>Panasonic</td>
-                              <td>Sunglass</td>
-                              <td>$12,354</td>
-                              <td>Done</td>
+                              <td class="text-center">Samsung</td>
+                              <td class="text-center">$38,536</td>
+                              <td class="text-center">Smart Phone</td>
                             </tr>
                           </tbody>
                         </table>
@@ -851,7 +215,6 @@
                               <td>Samsung</td>
                               <td>Smart Phone</td>
                               <td>$38,536</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -873,7 +236,6 @@
                               <td>Asus</td>
                               <td>Laptop</td>
                               <td>$20,573</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -917,7 +279,6 @@
                               <td>Apple</td>
                               <td>Computer</td>
                               <td>$15,354</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -939,7 +300,6 @@
                               <td>Panasonic</td>
                               <td>Sunglass</td>
                               <td>$12,354</td>
-                              <td>Done</td>
                             </tr>
                           </tbody>
                         </table>
@@ -985,7 +345,6 @@
                               <td>Samsung</td>
                               <td>Smart Phone</td>
                               <td>$38,536</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -1007,7 +366,6 @@
                               <td>Asus</td>
                               <td>Laptop</td>
                               <td>$20,573</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -1051,7 +409,6 @@
                               <td>Apple</td>
                               <td>Computer</td>
                               <td>$15,354</td>
-                              <td>Done</td>
                             </tr>
                             <tr>
                               <td>
@@ -1073,7 +430,6 @@
                               <td>Panasonic</td>
                               <td>Sunglass</td>
                               <td>$12,354</td>
-                              <td>Done</td>
                             </tr>
                           </tbody>
                         </table>
