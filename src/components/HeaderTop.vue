@@ -4,11 +4,11 @@
       <div class="navbar-left">
         <div class="logo-area">
           <a class="navbar-brand" href="index.html">
-            <img class="dark" src="img/logo-dark.png" alt="logo" />
-            <img class="light" src="img/logo-white.png" alt="logo" />
+            <img class="dark" src="/img/logo-dark.png" alt="logo" />
+            <img class="light" src="/img/logo-white.png" alt="logo" />
           </a>
           <a href="#" class="sidebar-toggle">
-            <img class="svg" src="img/svg/align-center-alt.svg" alt="img"
+            <img class="svg" src="/img/svg/align-center-alt.svg" alt="img"
           /></a>
         </div>
         <div class="top-menu">
@@ -77,7 +77,7 @@
                       <li class="has-subMenu-left">
                         <a href="#" class="">
                           <img
-                            src="img/svg/mail.svg"
+                            src="/img/svg/mail.svg"
                             alt="mail"
                             class="svg nav-icon"
                           />
@@ -95,7 +95,7 @@
                       <li>
                         <a href="chat.html" class="">
                           <img
-                            src="img/svg/message-square.svg"
+                            src="/img/svg/message-square.svg"
                             alt="message-square"
                             class="svg nav-icon"
                           />
@@ -109,7 +109,7 @@
                       <li class="has-subMenu-left">
                         <a href="#" class="">
                           <img
-                            src="img/svg/shopping-cart.svg"
+                            src="/img/svg/shopping-cart.svg"
                             alt="shopping-cart"
                             class="svg nav-icon"
                           />
@@ -202,7 +202,7 @@
                       <li class="has-subMenu-left">
                         <a href="#" class="">
                           <img
-                            src="img/svg/user-check.svg"
+                            src="/img/svg/user-check.svg"
                             alt="user-check"
                             class="svg nav-icon"
                           />
@@ -220,7 +220,7 @@
                       <li>
                         <a href="chat.html" class="">
                           <img
-                            src="img/svg/bookmark.svg"
+                            src="/img/svg/bookmark.svg"
                             alt="bookmark"
                             class="svg nav-icon"
                           />
@@ -230,7 +230,7 @@
                       <li>
                         <a href="chat.html" class="">
                           <img
-                            src="img/svg/activity.svg"
+                            src="/img/svg/activity.svg"
                             alt="activity"
                             class="svg nav-icon"
                           />
@@ -244,7 +244,7 @@
                       <li>
                         <a href="kanban.html" class="">
                           <img
-                            src="img/svg/columns.svg"
+                            src="/img/svg/columns.svg"
                             alt="columns"
                             class="svg nav-icon"
                           />
@@ -254,7 +254,7 @@
                       <li class="has-subMenu-left">
                         <a href="#" class="">
                           <img
-                            src="img/svg/repeat.svg"
+                            src="/img/svg/repeat.svg"
                             alt="repeat"
                             class="svg nav-icon"
                           />
@@ -277,7 +277,7 @@
                       <li>
                         <a href="file-manager.html" class="">
                           <img
-                            src="img/svg/file.svg"
+                            src="/img/svg/file.svg"
                             alt="file"
                             class="svg nav-icon"
                           />
@@ -287,7 +287,7 @@
                       <li>
                         <a href="task-app.html" class="">
                           <img
-                            src="img/svg/clipboard.svg"
+                            src="/img/svg/clipboard.svg"
                             alt="clipboard"
                             class="svg nav-icon"
                           />
@@ -303,7 +303,7 @@
                       <li class="has-subMenu-left">
                         <a href="#" class="">
                           <img
-                            src="img/svg/user.svg"
+                            src="/img/svg/user.svg"
                             alt="user"
                             class="svg nav-icon"
                           />
@@ -390,7 +390,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/shopping-cart.svg"
+                        src="/img/svg/shopping-cart.svg"
                         alt="shopping-cart"
                         class="svg nav-icon"
                       />
@@ -413,7 +413,7 @@
                   <li>
                     <a href="editors.html" class="">
                       <img
-                        src="img/svg/edit.svg"
+                        src="/img/svg/edit.svg"
                         alt="svg"
                         class="svg nav-icon"
                       />
@@ -423,7 +423,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/grid.svg"
+                        src="/img/svg/grid.svg"
                         alt="grid"
                         class="svg nav-icon"
                       />
@@ -444,7 +444,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/bar-chart-2.svg"
+                        src="/img/svg/bar-chart-2.svg"
                         alt="bar-chart-2"
                         class="svg nav-icon"
                       />
@@ -465,7 +465,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/disc.svg"
+                        src="/img/svg/disc.svg"
                         alt="disc"
                         class="svg nav-icon"
                       />
@@ -492,7 +492,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/map.svg"
+                        src="/img/svg/map.svg"
                         alt="map"
                         class="svg nav-icon"
                       />
@@ -513,7 +513,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/server.svg"
+                        src="/img/svg/server.svg"
                         alt="server"
                         class="svg nav-icon"
                       />
@@ -534,7 +534,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/square.svg"
+                        src="/img/svg/square.svg"
                         alt="square"
                         class="svg nav-icon"
                       />
@@ -561,7 +561,7 @@
                   <li class="has-subMenu-left">
                     <a href="#" class="">
                       <img
-                        src="img/svg/book.svg"
+                        src="/img/svg/book.svg"
                         alt="book"
                         class="svg nav-icon"
                       />
@@ -901,7 +901,7 @@
           <li class="nav-message">
             <div class="dropdown-custom">
               <a href="javascript:;" class="nav-item-toggle icon-active">
-                <img class="svg" src="img/svg/message.svg" alt="img" />
+                <img class="svg" src="/img/svg/message.svg" alt="img" />
               </a>
               <div class="dropdown-parent-wrapper">
                 <div class="dropdown-wrapper">
@@ -912,7 +912,7 @@
                   <ul>
                     <li class="author-online has-new-message">
                       <div class="user-avater">
-                        <img src="img/team-1.png" alt="" />
+                        <img src="/img/team-1.png" alt="" />
                       </div>
                       <div class="user-message">
                         <p>
@@ -939,7 +939,7 @@
                     </li>
                     <li class="author-offline has-new-message">
                       <div class="user-avater">
-                        <img src="img/team-1.png" alt="" />
+                        <img src="/img/team-1.png" alt="" />
                       </div>
                       <div class="user-message">
                         <p>
@@ -966,7 +966,7 @@
                     </li>
                     <li class="author-online has-new-message">
                       <div class="user-avater">
-                        <img src="img/team-1.png" alt="" />
+                        <img src="/img/team-1.png" alt="" />
                       </div>
                       <div class="user-message">
                         <p>
@@ -993,7 +993,7 @@
                     </li>
                     <li class="author-offline">
                       <div class="user-avater">
-                        <img src="img/team-1.png" alt="" />
+                        <img src="/img/team-1.png" alt="" />
                       </div>
                       <div class="user-message">
                         <p>
@@ -1016,7 +1016,7 @@
                     </li>
                     <li class="author-offline">
                       <div class="user-avater">
-                        <img src="img/team-1.png" alt="" />
+                        <img src="/img/team-1.png" alt="" />
                       </div>
                       <div class="user-message">
                         <p>
@@ -1047,7 +1047,7 @@
           <li class="nav-notification">
             <div class="dropdown-custom">
               <a href="javascript:;" class="nav-item-toggle icon-active">
-                <img class="svg" src="img/svg/alarm.svg" alt="img" />
+                <img class="svg" src="/img/svg/alarm.svg" alt="img" />
               </a>
               <div class="dropdown-parent-wrapper">
                 <div class="dropdown-wrapper">
@@ -1062,7 +1062,7 @@
                       <div
                         class="nav-notification__type nav-notification__type--primary"
                       >
-                        <img class="svg" src="img/svg/inbox.svg" alt="inbox" />
+                        <img class="svg" src="/img/svg/inbox.svg" alt="inbox" />
                       </div>
                       <div class="nav-notification__details">
                         <p>
@@ -1087,7 +1087,7 @@
                       >
                         <img
                           class="svg"
-                          src="img/svg/upload.svg"
+                          src="/img/svg/upload.svg"
                           alt="upload"
                         />
                       </div>
@@ -1114,7 +1114,7 @@
                       >
                         <img
                           class="svg"
-                          src="img/svg/log-in.svg"
+                          src="/img/svg/log-in.svg"
                           alt="log-in"
                         />
                       </div>
@@ -1141,7 +1141,7 @@
                       >
                         <img
                           class="svg"
-                          src="img/svg/at-sign.svg"
+                          src="/img/svg/at-sign.svg"
                           alt="at-sign"
                         />
                       </div>
@@ -1166,7 +1166,7 @@
                       <div
                         class="nav-notification__type nav-notification__type--danger"
                       >
-                        <img src="img/svg/heart.svg" alt="heart" class="svg" />
+                        <img src="/img/svg/heart.svg" alt="heart" class="svg" />
                       </div>
                       <div class="nav-notification__details">
                         <p>
@@ -1195,14 +1195,14 @@
           <li class="nav-settings">
             <div class="dropdown-custom">
               <a href="javascript:;" class="nav-item-toggle">
-                <img src="img/setting.png" alt="setting" />
+                <img src="/img/setting.png" alt="setting" />
               </a>
               <div class="dropdown-parent-wrapper">
                 <div class="dropdown-wrapper dropdown-wrapper--large">
                   <ul class="list-settings">
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/mail.png" alt="" />
+                        <img src="/img/mail.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1213,7 +1213,7 @@
                     </li>
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/color-palette.png" alt="" />
+                        <img src="/img/color-palette.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1224,7 +1224,7 @@
                     </li>
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/home.png" alt="" />
+                        <img src="/img/home.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1235,7 +1235,7 @@
                     </li>
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/video-camera.png" alt="" />
+                        <img src="/img/video-camera.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1246,7 +1246,7 @@
                     </li>
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/document.png" alt="" />
+                        <img src="/img/document.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1257,7 +1257,7 @@
                     </li>
                     <li class="d-flex">
                       <div class="me-3">
-                        <img src="img/microphone.png" alt="" />
+                        <img src="/img/microphone.png" alt="" />
                       </div>
                       <div class="flex-grow-1">
                         <h6>
@@ -1286,7 +1286,7 @@
                   <div class="nav-author__info">
                     <div class="author-img">
                       <img
-                        src="img/author-nav.jpg"
+                        src="/img/author-nav.jpg"
                         alt=""
                         class="rounded-circle"
                       />
@@ -1320,15 +1320,15 @@
         <div class="navbar-right__mobileAction d-md-none">
           <a href="#" class="btn-search">
             <img
-              src="img/svg/search.svg"
+              src="/img/svg/search.svg"
               alt="search"
               class="svg feather-search" />
-            <img src="img/svg/x.svg" alt="x" class="svg feather-x"
+            <img src="/img/svg/x.svg" alt="x" class="svg feather-x"
           /></a>
           <a href="#" class="btn-author-action">
             <img
               class="svg"
-              src="img/svg/more-vertical.svg"
+              src="/img/svg/more-vertical.svg"
               alt="more-vertical"
           /></a>
         </div>

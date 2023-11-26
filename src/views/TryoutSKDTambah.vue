@@ -42,8 +42,8 @@
                 </div>
               </div>
               <div class="action-btn">
-                <router-link to="/tryoutskd/tambah" class="btn btn-primary"
-                  >Tambah</router-link
+                <router-link to="/tryoutskd/tambahkan" class="btn btn-primary"
+                  >Tambahkan</router-link
                 >
               </div>
             </div>

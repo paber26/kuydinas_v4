@@ -6,38 +6,37 @@ const routes = [
   {
     path: "/",
     name: "dashboard",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/DashboardView.vue"),
+    component: () => import("../views/DashboardView.vue"),
   },
   {
     path: "/tryoutskd",
     name: "tryoutskd",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+    component: () => import("../views/TryoutSKDView.vue"),
+  },
+  {
+    path: "/tryoutskd/tambah",
+    name: "tryoutskdtambah",
+    component: () => import("../views/TryoutSKDTambah.vue"),
   },
   {
     path: "/materiskd",
     name: "materiskd",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+    component: () => import("../views/TryoutSKDView.vue"),
   },
   {
     path: "/akun",
     name: "akun",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AkunView.vue"),
+    component: () => import("../views/AkunView.vue"),
   },
   {
     path: "/testimoni",
     name: "testimoni",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AkunView.vue"),
+    component: () => import("../views/AkunView.vue"),
   },
   {
     path: "/inbox",
     name: "inbox",
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/InboxView.vue"),
+    component: () => import("../views/InboxView.vue"),
   },
   // {
   //   path: "/",
@@ -50,8 +49,7 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    component: () => import("../views/AboutView.vue"),
   },
 ];
 

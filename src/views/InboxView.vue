@@ -26,7 +26,11 @@
                 <div class="dm-mail-sidebar show mb-30">
                   <div class="card">
                     <a href="#" class="mailbar-cross d-md-none">
-                      <img src="img/svg/x.svg" alt="x" class="svg" />
+                      <img
+                        src="<%= BASE_URL %>img/svg/x.svg"
+                        alt="x"
+                        class="svg"
+                      />
                     </a>
                     <div class="card-body">
                       <div
@@ -37,7 +41,11 @@
                           class="btn-compose btn btn-md btn-primary btn-shadow-primary"
                           data-trigger="compose"
                         >
-                          <img src="img/svg/plus.svg" alt="plus" class="svg" />
+                          <img
+                            src="<%= BASE_URL %>img/svg/plus.svg"
+                            alt="plus"
+                            class="svg"
+                          />
                           Compose</a
                         >
                       </div>
@@ -402,7 +410,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -443,7 +454,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -484,7 +498,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -540,7 +557,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -581,7 +601,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -622,7 +645,10 @@
                               <i class="lar la-star"></i>
                             </a>
                             <span class="author-info">
-                              <img src="img/author/e1.png" alt="admin author" />
+                              <img
+                                src="<%= BASE_URL %>img/author/e1.png"
+                                alt="admin author"
+                              />
                               <span class="author-name">Alice Freeman</span>
                             </span>
                           </div>
@@ -667,7 +693,10 @@
                                 href="#"
                                 data-trigger="compose"
                               >
-                                <img src="img/svg/x.svg" alt="x" class="svg"
+                                <img
+                                  src="<%= BASE_URL %>img/svg/x.svg"
+                                  alt="x"
+                                  class="svg"
                               /></a>
                             </div>
                           </div>
