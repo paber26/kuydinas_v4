@@ -10,16 +10,28 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/DashboardView.vue"),
   },
   {
+    path: "/tryoutskd",
+    name: "tryoutskd",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+  },
+  {
+    path: "/materiskd",
+    name: "materiskd",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+  },
+  {
     path: "/akun",
     name: "akun",
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/AkunView.vue"),
   },
   {
-    path: "/tryoutskd",
-    name: "tryoutskd",
+    path: "/testimoni",
+    name: "testimoni",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/TryoutSKDView.vue"),
+      import(/* webpackChunkName: "about" */ "../views/AkunView.vue"),
   },
   {
     path: "/inbox",
