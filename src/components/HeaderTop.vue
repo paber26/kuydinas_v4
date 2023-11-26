@@ -1272,29 +1272,13 @@
             </div>
           </li>
           <!-- ends: .nav-support -->
-          <li class="nav-flag-select">
-            <div class="dropdown-custom">
-              <a href="javascript:;" class="nav-item-toggle"
-                ><img src="img/flag.png" alt="" class="rounded-circle"
-              /></a>
-              <div class="dropdown-parent-wrapper">
-                <div class="dropdown-wrapper dropdown-wrapper--small">
-                  <a href=""><img src="img/eng.png" alt="" /> English</a>
-                  <a href=""><img src="img/ger.png" alt="" /> German</a>
-                  <a href=""><img src="img/spa.png" alt="" /> Spanish</a>
-                  <a href=""><img src="img/tur.png" alt="" /> Turkish</a>
-                  <a href=""><img src="img/iraq.png" alt="" /> Arabic</a>
-                </div>
-              </div>
-            </div>
-          </li>
-          <!-- ends: .nav-flag-select -->
           <li class="nav-author">
             <div class="dropdown-custom">
               <a href="javascript:;" class="nav-item-toggle"
-                ><img src="img/author-nav.jpg" alt="" class="rounded-circle" />
+                ><img :src="user.picture" alt="" class="rounded-circle" />
                 <span class="nav-item__title"
-                  >Danial<i class="las la-angle-down nav-item__arrow"></i
+                  >{{ user.name
+                  }}<i class="las la-angle-down nav-item__arrow"></i
                 ></span>
               </a>
               <div class="dropdown-parent-wrapper">
@@ -1318,27 +1302,11 @@
                         <a href=""> <i class="uil uil-user"></i> Profile</a>
                       </li>
                       <li>
-                        <a href="">
-                          <i class="uil uil-setting"></i>
-                          Settings</a
-                        >
-                      </li>
-                      <li>
-                        <a href="">
-                          <i class="uil uil-key-skeleton"></i> Billing</a
-                        >
-                      </li>
-                      <li>
-                        <a href="">
-                          <i class="uil uil-users-alt"></i> Activity</a
-                        >
-                      </li>
-                      <li>
                         <a href=""> <i class="uil uil-bell"></i> Help</a>
                       </li>
                     </ul>
-                    <a href="" class="nav-author__signout">
-                      <i class="uil uil-sign-out-alt"></i> Sign Out</a
+                    <a href="#" @click="logout" class="nav-author__signout">
+                      <i class="uil uil-sign-out-alt"></i> Keluar</a
                     >
                   </div>
                 </div>
@@ -1371,7 +1339,32 @@
 </template>
 
 <script>
-export default {};
+import { googleLogout } from "vue3-google-login";
+
+export default {
+  props: {
+    user: Object,
+    listenerChild: Object,
+  },
+  data() {
+    return {
+      loggedIn: true,
+    };
+  },
+
+  mounted() {
+    console.log(this.user);
+  },
+
+  methods: {
+    logout() {
+      googleLogout();
+      this.loggedIn = false;
+      console.log(this.loggedIn);
+      this.$emit("listenerChild", false);
+    },
+  },
+};
 </script>
 
 <style></style>
