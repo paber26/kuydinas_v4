@@ -60,8 +60,6 @@ export default {
   // },
   computed: {
     currentRouteName() {
-      // let url = this.$router.currentRoute.value.path;
-      // console.log(url.split("/")[1]);
       return "/" + this.$router.currentRoute.value.path.split("/")[1];
     },
   },
