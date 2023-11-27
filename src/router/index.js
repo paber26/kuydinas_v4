@@ -19,6 +19,11 @@ const routes = [
     component: () => import("../views/TryoutSKDTambah.vue"),
   },
   {
+    path: "/tryoutskd/edit/:id",
+    name: "tryoutskdedit",
+    component: () => import("../views/TryoutSKDEdit.vue"),
+  },
+  {
     path: "/materiskd",
     name: "materiskd",
     component: () => import("../views/TryoutSKDView.vue"),

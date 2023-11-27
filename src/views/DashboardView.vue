@@ -452,9 +452,6 @@ export default {
   props: {
     expanded: Boolean,
   },
-  mounted() {
-    console.log(this.expanded);
-  },
 };
 </script>
 

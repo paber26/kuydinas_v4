@@ -1,5 +1,5 @@
 <template>
-  <div class="contents">
+  <div class="contents" :class="expanded ? 'expanded' : ''">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-12">
@@ -177,9 +177,9 @@
                             </a>
                           </li>
                           <li>
-                            <a href="#" class="edit">
+                            <router-link to="/tryoutskd/edit/01" class="edit">
                               <i class="uil uil-edit"></i>
-                            </a>
+                            </router-link>
                           </li>
                           <li>
                             <a href="#" class="remove">
@@ -451,7 +451,11 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    expanded: Boolean,
+  },
+};
 </script>
 
 <style></style>
