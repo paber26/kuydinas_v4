@@ -135,13 +135,13 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>#01</td>
+                    <tr v-for="(tskd, index) in tryoutskd" :key="tskd.eid">
+                      <td>{{ index + 1 }}</td>
                       <td>
                         <div class="d-flex">
                           <div class="userDatatable-inline-title">
                             <a href="#" class="text-dark fw-500">
-                              <h6>Kellie Marquot</h6>
+                              <h6>{{ tskd.title }}</h6>
                             </a>
                           </div>
                         </div>
@@ -153,17 +153,19 @@
                       </td>
                       <td>
                         <div class="userDatatable-content--subject">
-                          100 menit
+                          {{ tskd.time }} menit
                         </div>
                       </td>
                       <td>
-                        <div class="userDatatable-content--priority">100</div>
+                        <div class="userDatatable-content--priority">
+                          {{ tskd.harga }}
+                        </div>
                       </td>
                       <td>
                         <div class="userDatatable-content d-inline-block">
                           <span
                             class="bg-opacity-success color-success userDatatable-content-status active"
-                            >Aktif</span
+                            >{{ tskd.status }}</span
                           >
                         </div>
                       </td>
@@ -457,10 +459,18 @@ export default {
   props: {
     expanded: Boolean,
   },
+  data() {
+    return {
+      tryoutskd: [],
+    };
+  },
   mounted() {
-    axios
-      .get("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => console.log(response.data));
+    console.log("berjalan");
+    axios.get(this.http + "/api/tryoutskd").then((response) => {
+      this.tryoutskd = response.data;
+      console.log(response.data);
+    });
+    console.log(this.http);
   },
 };
 </script>
