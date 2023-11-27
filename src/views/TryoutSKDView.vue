@@ -451,9 +451,16 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   props: {
     expanded: Boolean,
+  },
+  mounted() {
+    axios
+      .get("https://jsonplaceholder.typicode.com/posts")
+      .then((response) => console.log(response.data));
   },
 };
 </script>
