@@ -7,7 +7,7 @@
             <img class="dark" src="/img/logo-dark.png" alt="logo" />
             <img class="light" src="/img/logo-white.png" alt="logo" />
           </a>
-          <a href="#" class="sidebar-toggle">
+          <a href="#" @click="expanded()" class="sidebar-toggle">
             <img class="svg" src="/img/svg/align-center-alt.svg" alt="img"
           /></a>
         </div>
@@ -1352,16 +1352,15 @@ export default {
     };
   },
 
-  mounted() {
-    console.log(this.user);
-  },
-
   methods: {
     logout() {
       googleLogout();
       this.loggedIn = false;
       console.log(this.loggedIn);
-      this.$emit("listenerChild", false);
+      this.$emit("listenerChild", { stt: "loggedIn", loggedIn: false });
+    },
+    expanded() {
+      this.$emit("listenerChild", { stt: "expanded" });
     },
   },
 };

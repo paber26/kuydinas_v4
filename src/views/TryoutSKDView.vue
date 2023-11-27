@@ -163,7 +163,7 @@
                         <div class="userDatatable-content d-inline-block">
                           <span
                             class="bg-opacity-success color-success userDatatable-content-status active"
-                            >active</span
+                            >Aktif</span
                           >
                         </div>
                       </td>
@@ -374,7 +374,7 @@
                         <div class="userDatatable-content d-inline-block">
                           <span
                             class="bg-opacity-success color-success userDatatable-content-status active"
-                            >active</span
+                            >Aktif</span
                           >
                         </div>
                       </td>

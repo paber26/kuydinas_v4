@@ -15,9 +15,9 @@
 
     <HeaderTop :user="user" @listenerChild="listenerChild"></HeaderTop>
     <main class="main-content">
-      <SidebarWrapper></SidebarWrapper>
+      <SidebarWrapper :expanded="expanded"></SidebarWrapper>
 
-      <router-view />
+      <router-view :expanded="expanded" />
 
       <FooterWrapper></FooterWrapper>
     </main>
@@ -51,6 +51,7 @@ export default {
   data() {
     return {
       loggedIn: false,
+      expanded: false,
       user: null,
       callback: (respoonse) => {
         console.log("loged in");
@@ -68,7 +69,11 @@ export default {
 
   methods: {
     listenerChild(reply) {
-      this.loggedIn = reply;
+      if (reply.stt == "loggedIn") {
+        this.loggedIn = reply.loggedIn;
+      } else if (reply.stt == "expanded") {
+        this.expanded = !this.expanded;
+      }
     },
   },
 

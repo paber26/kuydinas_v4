@@ -1,5 +1,5 @@
 <template>
-  <div class="contents">
+  <div class="contents" :class="expanded ? 'expanded' : ''">
     <div class="demo2 mb-25 t-thead-bg">
       <div class="container-fluid">
         <div class="row">
@@ -448,7 +448,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    expanded: Boolean,
+  },
+  mounted() {
+    console.log(this.expanded);
+  },
+};
 </script>
 
 <style></style>

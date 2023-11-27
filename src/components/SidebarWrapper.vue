@@ -1,6 +1,10 @@
 <template>
   <div class="sidebar-wrapper">
-    <div class="sidebar sidebar-collapse" id="sidebar">
+    <div
+      class="sidebar sidebar-collapse"
+      :class="expanded ? 'collapsed' : ''"
+      id="sidebar"
+    >
       <div class="sidebar__menu-group">
         <ul class="sidebar_nav">
           <li :class="currentRouteName == '/' ? 'active' : ''">
@@ -44,6 +48,7 @@
 export default {
   props: {
     msg: String,
+    expanded: Boolean,
   },
   // data() {
   //   return {
