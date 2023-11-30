@@ -36,141 +36,140 @@
                 <div class="horizontal-form">
                   <form action="#">
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Nama Try Out</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.title"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.title }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Jumlah TWK</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="number"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.twk"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.twk }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Jumlah TIU</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="number"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.tiu"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.tiu }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Jumlah TKP</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="number"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.tkp"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.tkp }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Waktu Pengerjaan</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="number"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.time"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.time }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Harga</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="number"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.harga"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.harga }}
+                        </div>
                       </div>
                     </div>
                     <!-- End of informasi try out -->
 
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Postingan Instagram</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.postingan"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.postingan }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Grup WhatsApp</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.grupwa"
-                        />
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.grupwa }}
+                        </div>
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Informasi</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <textarea
-                          type="text"
-                          class="form-control ip-light radius-xs b-light"
-                          rows="5"
-                          :value="info.informasi"
-                        ></textarea>
+                        <div
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                        >
+                          {{ info.informasi?.substring(0, 60) + "...." }}
+                        </div>
                       </div>
                     </div>
                   </form>
@@ -181,69 +180,71 @@
           </div>
           <!-- Akhir informasi try out -->
 
-          <div class="col-lg-12" v-for="(i, index) in 5" :key="index">
+          <div class="col-lg-12" v-for="dsoal in soals" :key="dsoal.qid">
             <div class="card card-horizontal card-default card-md mb-4">
               <div class="card-header">
-                <h6>Soal nomor {{ i }}</h6>
+                <h6>Soal nomor {{ dsoal.sn }}</h6>
               </div>
               <div class="card-body py-md-30">
                 <div class="horizontal-form">
                   <form action="#">
-                    <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                    <div class="form-group row p-2">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Pertanyaan</label
                         >
                       </div>
                       <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          placeholder="Duran Clayton"
-                        />
+                        <span
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                          v-html="dsoal.qns"
+                        >
+                        </span>
                       </div>
                     </div>
 
                     <div
-                      class="form-group row"
-                      v-for="(i, index) in 5"
-                      :key="index"
+                      v-for="(i, pilihan) in rangeopsi(dsoal.sn)"
+                      :key="i.eid"
                     >
-                      <div class="col-sm-3 d-flex aling-items-center">
-                        <label
-                          class="col-form-label color-dark fs-14 fw-500 align-center"
-                          >Opsi {{ i }},
-                          {{ String.fromCharCode(index + 65) }}</label
-                        >
+                      <div class="form-group row">
+                        <div class="col-sm-3 d-flex">
+                          <label
+                            class="col-form-label color-dark fs-14 fw-500 align-center"
+                            >Opsi {{ String.fromCharCode(pilihan + 65) }}</label
+                          >
+                        </div>
+                        <div class="col-sm-9">
+                          <span
+                            class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                            :class="opsis[i]?.poin == 5 ? 'bg-success' : ''"
+                            v-html="opsis[i]?.option"
+                          >
+                          </span>
+                        </div>
                       </div>
-                      <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          placeholder="Duran Clayton"
-                        />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
-                        <label
-                          class="col-form-label color-dark fs-14 fw-500 align-center"
-                          >Poin A</label
-                        >
-                      </div>
-                      <div class="col-sm-9">
-                        <input
-                          type="text"
-                          class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          placeholder="Duran Clayton"
-                        />
+                      <div class="form-group row">
+                        <div class="col-sm-3 d-flex">
+                          <label
+                            class="col-form-label color-dark fs-14 fw-500 align-center"
+                            >Poin {{ String.fromCharCode(pilihan + 65) }}</label
+                          >
+                        </div>
+                        <div class="col-sm-9">
+                          <span
+                            class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                            :class="opsis[i]?.poin == 5 ? 'bg-success' : ''"
+                            v-html="opsis[i]?.poin"
+                          >
+                          </span>
+                        </div>
                       </div>
                     </div>
                     <!-- Akhir opsi soal -->
 
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Jawaban Benar</label
@@ -263,7 +264,7 @@
                       </div>
                     </div>
                     <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
+                      <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
                           >Pembahasan</label
@@ -292,24 +293,39 @@
 <script>
 import axios from "axios";
 export default {
-  props: ["id", "expanded"],
+  props: ["eid", "expanded"],
   data() {
     return {
       info: [],
       soals: [],
+      opsis: [],
+      rangeop: [],
       totalsoal: "",
     };
   },
   mounted() {
-    // console.log(this.id);
-    // console.log(this.expanded);
-    axios.get(this.http + "/api/tryoutskd/soal/" + this.id).then((response) => {
-      this.info = response.data[0];
-      this.soals = response.data[1];
-      this.totalsoal = this.soals.length;
-      console.log(this.totalsoal);
-    });
-    console.log(this.http);
+    axios
+      .get(this.http + "/api/tryoutskd/getsoal/" + this.eid)
+      .then((response) => {
+        this.info = response.data[0];
+        this.soals = response.data[1];
+        this.totalsoal = this.soals.length;
+      });
+
+    axios
+      .get(this.http + "/api/tryoutskd/getopsi/" + this.eid)
+      .then((response) => {
+        this.opsis = response.data;
+      });
+  },
+  methods: {
+    rangeopsi(val) {
+      this.rangeop = [];
+      for (let i = 5 * (val - 1); i < 5 * val; i++) {
+        this.rangeop.push(i);
+      }
+      return this.rangeop;
+    },
   },
 };
 </script>

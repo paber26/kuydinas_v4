@@ -16,9 +16,16 @@ const routes = [
     component: () => import("../views/TryoutSKDTambah.vue"),
   },
   {
+    path: "/tryoutskd/lihat/:eid",
+    name: "tryoutskdlihat",
+    component: () => import("../views/TryoutSKDLihat.vue"),
+    props: true,
+  },
+  {
     path: "/tryoutskd/edit/:id",
     name: "tryoutskdedit",
     component: () => import("../views/TryoutSKDEdit.vue"),
+    props: true,
   },
   {
     path: "/materiskd",

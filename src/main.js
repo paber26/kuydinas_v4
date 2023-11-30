@@ -18,7 +18,7 @@ const app = createApp(App)
   })
   .use(router);
 
-app.config.globalProperties.http = "http://127.0.0.1:8000";
+app.config.globalProperties.http = "http://127.0.0.1:8001";
 
 app.mount("#app");
 

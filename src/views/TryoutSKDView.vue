@@ -162,24 +162,38 @@
                         </div>
                       </td>
                       <td>
-                        <div class="userDatatable-content d-inline-block">
+                        <a
+                          href="#"
+                          class="userDatatable-content d-inline-block"
+                        >
                           <span
-                            class="bg-opacity-success color-success userDatatable-content-status active"
+                            class="userDatatable-content-status"
+                            :class="
+                              tskd.status == 'enabled'
+                                ? 'bg-opacity-success color-success'
+                                : 'bg-opacity-danger color-danger'
+                            "
                             >{{ tskd.status }}</span
                           >
-                        </div>
+                        </a>
                       </td>
                       <td>
                         <ul
                           class="orderDatatable_actions mb-0 d-flex flex-wrap"
                         >
                           <li>
-                            <a href="#" class="view">
-                              <i class="uil uil-setting"></i>
-                            </a>
+                            <router-link
+                              :to="'/tryoutskd/lihat/' + tskd.eid"
+                              class="view"
+                            >
+                              <i class="uil uil-eye"></i>
+                            </router-link>
                           </li>
                           <li>
-                            <router-link to="/tryoutskd/edit/01" class="edit">
+                            <router-link
+                              :to="'/tryoutskd/edit/' + tskd.eid"
+                              class="edit"
+                            >
                               <i class="uil uil-edit"></i>
                             </router-link>
                           </li>
@@ -465,7 +479,6 @@ export default {
     };
   },
   mounted() {
-    console.log("berjalan");
     axios.get(this.http + "/api/tryoutskd").then((response) => {
       this.tryoutskd = response.data;
       console.log(response.data);

@@ -46,7 +46,7 @@
                         <input
                           type="text"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.title"
+                          placeholder="Masukkan nama tryout...."
                         />
                       </div>
                     </div>
@@ -61,7 +61,7 @@
                         <input
                           type="number"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.twk"
+                          placeholder="Masukkan jumlah TWK...."
                         />
                       </div>
                     </div>
@@ -76,7 +76,7 @@
                         <input
                           type="number"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.tiu"
+                          placeholder="Masukkan jumlah TIU...."
                         />
                       </div>
                     </div>
@@ -91,7 +91,7 @@
                         <input
                           type="number"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.tkp"
+                          placeholder="Masukkan jumlah TKP...."
                         />
                       </div>
                     </div>
@@ -106,7 +106,7 @@
                         <input
                           type="number"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.time"
+                          placeholder="Masukan waktu pengerjaan...."
                         />
                       </div>
                     </div>
@@ -121,7 +121,7 @@
                         <input
                           type="number"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.harga"
+                          placeholder="Masukkan harga...."
                         />
                       </div>
                     </div>
@@ -131,14 +131,14 @@
                       <div class="col-sm-3 d-flex aling-items-center">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
-                          >Postingan Instagram</label
+                          >Informasi Instagram</label
                         >
                       </div>
                       <div class="col-sm-9">
                         <input
                           type="text"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.postingan"
+                          placeholder="Masukkan informasi instagram...."
                         />
                       </div>
                     </div>
@@ -146,31 +146,15 @@
                       <div class="col-sm-3 d-flex aling-items-center">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
-                          >Grup WhatsApp</label
+                          >Link WhatsApp</label
                         >
                       </div>
                       <div class="col-sm-9">
                         <input
                           type="text"
                           class="form-control ih-medium ip-light radius-xs b-light px-15"
-                          :value="info.grupwa"
+                          placeholder="Masukkan link wa...."
                         />
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <div class="col-sm-3 d-flex aling-items-center">
-                        <label
-                          class="col-form-label color-dark fs-14 fw-500 align-center"
-                          >Informasi</label
-                        >
-                      </div>
-                      <div class="col-sm-9">
-                        <textarea
-                          type="text"
-                          class="form-control ip-light radius-xs b-light"
-                          rows="5"
-                          :value="info.informasi"
-                        ></textarea>
                       </div>
                     </div>
                   </form>
