@@ -22,7 +22,7 @@ const routes = [
     props: true,
   },
   {
-    path: "/tryoutskd/edit/:id",
+    path: "/tryoutskd/edit/:eid",
     name: "tryoutskdedit",
     component: () => import("../views/TryoutSKDEdit.vue"),
     props: true,

@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="breadcrumb-main">
-            <h4 class="text-capitalize breadcrumb-title">Edit Try Out</h4>
+            <h4 class="text-capitalize breadcrumb-title">Lihat Try Out</h4>
             <div class="breadcrumb-action justify-content-center flex-wrap">
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -28,9 +28,18 @@
       <div class="form-element">
         <div class="row">
           <div class="col-lg-12">
-            <div class="card card-horizontal card-default card-md mb-4">
-              <div class="card-header">
-                <h6>Informasi Try Out</h6>
+            <div class="card card-horizontal card-default card-md">
+              <div class="d-flex justify-content-between align-center">
+                <div class="card-header">
+                  <h6>Informasi Try Out</h6>
+                </div>
+                <div class="action-btn mx-2">
+                  <router-link
+                    :to="'/tryoutskd/edit/' + eid"
+                    class="btn btn-primary"
+                    >Edit</router-link
+                  >
+                </div>
               </div>
               <div class="card-body py-md-30">
                 <div class="horizontal-form">
@@ -188,7 +197,7 @@
               <div class="card-body py-md-30">
                 <div class="horizontal-form">
                   <form action="#">
-                    <div class="form-group row p-2">
+                    <div class="form-group row">
                       <div class="col-sm-3 d-flex">
                         <label
                           class="col-form-label color-dark fs-14 fw-500 align-center"
@@ -271,11 +280,11 @@
                         >
                       </div>
                       <div class="col-sm-9">
-                        <textarea
-                          class="form-control"
-                          id="exampleFormControlTextarea1"
-                          rows="4"
-                        ></textarea>
+                        <span
+                          class="form-control ip-light radius-xs b-light px-15 justify-content-start text-start"
+                          v-html="dsoal.exp"
+                        >
+                        </span>
                       </div>
                     </div>
                   </form>
