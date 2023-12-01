@@ -329,18 +329,15 @@ export default {
     axios
       .get(this.http + "/api/tryoutskd/getsoal/" + this.eid)
       .then((response) => {
-        console.log(response.data);
         this.info = response.data[0];
         this.soals = response.data[1];
         this.totalsoal = this.soals.length;
-        console.log(this.info);
       });
 
     axios
       .get(this.http + "/api/tryoutskd/getopsi/" + this.eid)
       .then((response) => {
         this.opsis = response.data;
-        console.log(this.opsis);
       });
   },
   methods: {
@@ -364,39 +361,6 @@ export default {
       return this.rangeop;
     },
   },
-  // data() {
-  //   return {
-  //     info: [],
-  //     soals: [],
-  //     opsis: [],
-  //     rangeop: [],
-  //     totalsoal: "",
-  //   };
-  // },
-  // mounted() {
-  //   axios
-  //     .get(this.http + "/api/tryoutskd/getsoal/" + this.eid)
-  //     .then((response) => {
-  //       this.info = response.data[0];
-  //       this.soals = response.data[1];
-  //       this.totalsoal = this.soals.length;
-  //     });
-
-  //   axios
-  //     .get(this.http + "/api/tryoutskd/getopsi/" + this.eid)
-  //     .then((response) => {
-  //       this.opsis = response.data;
-  //     });
-  // },
-  // methods: {
-  //   rangeopsi(val) {
-  //     this.rangeop = [];
-  //     for (let i = 5 * (val - 1); i < 5 * val; i++) {
-  //       this.rangeop.push(i);
-  //     }
-  //     return this.rangeop;
-  //   },
-  // },
 };
 </script>
 
