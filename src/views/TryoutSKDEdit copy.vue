@@ -193,7 +193,7 @@
               <div class="card-header">
                 <h6>Soal nomor {{ dsoal.sn }}</h6>
               </div>
-              <div class="card-body" v-if="opsis != ''">
+              <div class="card-body py-md-30" v-if="opsis != ''">
                 <div class="horizontal-form">
                   <div class="form-group row">
                     <div class="col-sm-3 d-flex aling-items-center">
@@ -257,6 +257,26 @@
                   </div>
                   <!-- Akhir opsi soal -->
 
+                  <div class="form-group row">
+                    <div class="col-sm-3 d-flex aling-items-center">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Jawaban Benar</label
+                      >
+                    </div>
+                    <div class="col-sm-2">
+                      <select v-model="opsis" class="form-control px-15">
+                        <option>Pilihan</option>
+                        <option
+                          v-for="(i, pilihan) in rangeopsi(dsoal.sn)"
+                          :key="i.eid"
+                          :selected="opsis[i].optionid == dsoal.ans"
+                        >
+                          {{ String.fromCharCode(pilihan + 65) }}
+                        </option>
+                      </select>
+                    </div>
+                  </div>
                   <div class="form-group row">
                     <div class="col-sm-3 d-flex aling-items-center">
                       <label
@@ -342,7 +362,6 @@ export default {
       return this.rangeop;
     },
     simpanperubahan() {
-      console.log(this.soals);
       console.log(this.soals[109]);
       console.log(this.opsis[109]);
     },
