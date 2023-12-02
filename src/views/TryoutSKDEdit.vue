@@ -349,10 +349,9 @@ export default {
           this.opsis,
         ])
         .then((response) => {
-          // this.info = response.data[0];
-          // this.soals = response.data[1];
-          // this.totalsoal = this.soals.length;
-          console.log(response.data);
+          if (response.data == "berhasil") {
+            this.$router.push("/tryoutskd/lihat/" + this.eid);
+          }
         });
     },
   },
