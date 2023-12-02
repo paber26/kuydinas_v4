@@ -342,9 +342,18 @@ export default {
       return this.rangeop;
     },
     simpanperubahan() {
-      console.log(this.soals);
-      console.log(this.soals[109]);
-      console.log(this.opsis[109]);
+      // var soaldanopsi = [this.soals, this.opsis];
+      axios
+        .post(this.http + "/api/tryoutskd/edit/simpan", [
+          this.soals,
+          this.opsis,
+        ])
+        .then((response) => {
+          // this.info = response.data[0];
+          // this.soals = response.data[1];
+          // this.totalsoal = this.soals.length;
+          console.log(response.data);
+        });
     },
   },
 };
