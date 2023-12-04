@@ -342,14 +342,12 @@ export default {
       return this.rangeop;
     },
     simpanperubahan() {
-      // console.log("oke");
       axios
         .post(this.http + "/api/tryoutskd/edit/simpan", [
           this.soals,
           this.opsis,
         ])
         .then((response) => {
-          console.log(response.data);
           if (response.data == "berhasil") {
             this.$router.push("/tryoutskd/lihat/" + this.eid);
           }

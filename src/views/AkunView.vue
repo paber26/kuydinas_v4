@@ -135,43 +135,38 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <td>#01</td>
+                    <tr v-for="(dakun, index) in akuns" :key="dakun.email">
+                      <td>{{ index + 1 }}</td>
                       <td>
                         <div class="d-flex">
                           <div class="userDatatable-inline-title">
                             <a href="#" class="text-dark fw-500">
-                              <h6>Kellie Marquot</h6>
+                              <h6>{{ dakun.name }}</h6>
                             </a>
                           </div>
                         </div>
                       </td>
                       <td>
                         <div class="userDatatable-content--subject">
-                          United Street
+                          {{ dakun.email }}
                         </div>
                       </td>
                       <td>
                         <div class="userDatatable-content--subject">
-                          Business Development
+                          {{ dakun.nowa }}
                         </div>
                       </td>
                       <td>
                         <div class="userDatatable-content--priority">
-                          Web Developer
+                          {{ dakun.koin }}
                         </div>
+                      </td>
+                      <td>
+                        <div class="userDatatable-content--priority">5</div>
                       </td>
                       <td>
                         <div class="userDatatable-content--priority">
                           January 20, 2020
-                        </div>
-                      </td>
-                      <td>
-                        <div class="userDatatable-content d-inline-block">
-                          <span
-                            class="bg-opacity-success color-success userDatatable-content-status active"
-                            >active</span
-                          >
                         </div>
                       </td>
                       <td>
@@ -186,11 +181,6 @@
                           <li>
                             <a href="#" class="edit">
                               <i class="uil uil-edit"></i>
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" class="remove">
-                              <i class="uil uil-trash-alt"></i>
                             </a>
                           </li>
                         </ul>
@@ -247,7 +237,24 @@
 </template>
 
 <script>
-export default {};
+import axios from "axios";
+export default {
+  props: {
+    user: Object,
+    listenerChild: Object,
+  },
+  data() {
+    return {
+      akuns: "",
+    };
+  },
+  mounted() {
+    axios.get(this.http + "/api/getakun").then((response) => {
+      console.log(response.data);
+      this.akuns = response.data;
+    });
+  },
+};
 </script>
 
 <style></style>

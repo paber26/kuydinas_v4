@@ -1356,7 +1356,6 @@ export default {
     logout() {
       googleLogout();
       this.loggedIn = false;
-      console.log(this.loggedIn);
       this.$emit("listenerChild", { stt: "loggedIn", loggedIn: false });
     },
     expanded() {

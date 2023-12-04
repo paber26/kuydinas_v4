@@ -17,7 +17,7 @@
     <main class="main-content">
       <SidebarWrapper :expanded="expanded"></SidebarWrapper>
 
-      <router-view :expanded="expanded" />
+      <router-view :expanded="expanded" :user="user" />
 
       <FooterWrapper></FooterWrapper>
     </main>
