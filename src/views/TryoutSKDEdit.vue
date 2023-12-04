@@ -342,7 +342,6 @@ export default {
       return this.rangeop;
     },
     simpanperubahan() {
-      // var soaldanopsi = [this.soals, this.opsis];
       axios
         .post(this.http + "/api/tryoutskd/edit/simpan", [
           this.soals,
