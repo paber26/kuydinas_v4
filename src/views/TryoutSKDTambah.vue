@@ -169,9 +169,9 @@ export default {
         .post(this.http + "/api/tryoutskd/tambah", this.detailskd)
         .then((response) => {
           console.log(response.data);
-          // if (response.data == "berhasil") {
-          //   this.$router.push("/tryoutskd/lihat/" + this.eid);
-          // }
+          if (response.data[0] == "berhasil") {
+            this.$router.push("/tryoutskd/edit/" + response.data[1]);
+          }
         });
     },
   },
