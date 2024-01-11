@@ -1,9 +1,19 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 const routes = [
   {
     path: "/",
     name: "dashboard",
     component: () => import("../views/DashboardView.vue"),
+  },
+  {
+    path: "/profil",
+    name: "profil",
+    component: () => import("../views/ProfilView.vue"),
+  },
+  {
+    path: "/profil/edit",
+    name: "profiledit",
+    component: () => import("../views/ProfilEdit.vue"),
   },
   {
     path: "/tryoutskd",
@@ -30,7 +40,7 @@ const routes = [
   {
     path: "/materiskd",
     name: "materiskd",
-    component: () => import("../views/TryoutSKDView.vue"),
+    component: () => import("../views/MateriSKD/IndexView.vue"),
   },
   {
     path: "/akun",
@@ -55,7 +65,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 

@@ -15,7 +15,7 @@
 
     <HeaderTop :user="user" @listenerChild="listenerChild"></HeaderTop>
     <main class="main-content">
-      <SidebarWrapper :expanded="expanded"></SidebarWrapper>
+      <SidebarWrapper :expanded="expanded" :user="user"></SidebarWrapper>
 
       <router-view :expanded="expanded" :user="user" />
 
@@ -36,7 +36,8 @@
   </div>
 
   <div v-else>
-    <GoogleLogin :callback="callback" prompt auto-login />
+    <!-- <GoogleLogin :callback="callback" prompt auto-login /> -->
+    <GoogleLogin :callback="callback" prompt />
   </div>
 </template>
 
@@ -46,18 +47,19 @@ import SidebarWrapper from "./components/SidebarWrapper.vue";
 import FooterWrapper from "./components/FooterWrapper.vue";
 
 import { decodeCredential } from "vue3-google-login";
+import axios from "axios";
 
 export default {
   data() {
     return {
-      loggedIn: false,
+      loggedIn: localStorage.getItem("loggedIn"),
       expanded: false,
-      user: null,
-      callback: (respoonse) => {
-        console.log("loged in");
+      user: JSON.parse(localStorage.getItem("user")),
+      user_email: localStorage.getItem("user_email"),
+      callback: (response) => {
         this.loggedIn = true;
-        this.user = decodeCredential(respoonse.credential);
-        console.log(this.user);
+        this.user = decodeCredential(response.credential);
+        this.cekAkun();
       },
     };
   },
@@ -75,17 +77,40 @@ export default {
         this.expanded = !this.expanded;
       }
     },
+    cekAkun() {
+      axios
+        .get(this.http + "/api/getinfoakun/" + this.user.email)
+        .then((response) => {
+          if (response.data == "") {
+            axios
+              .post(this.http + "/api/tambahakun", {
+                email: this.user.email,
+                name: this.user.name,
+                picture: this.user.picture,
+              })
+              .then((response) => {
+                this.user = response.data;
+                localStorage.setItem("user", JSON.stringify(this.user));
+                localStorage.setItem("loggedIn", true);
+                window.location.href = "#/profil/edit";
+              });
+          } else {
+            this.user = response.data;
+            localStorage.setItem("user", JSON.stringify(this.user));
+            localStorage.setItem("loggedIn", true);
+            if (response.data.nowa == "-") {
+              window.location.href = "#/profil/edit";
+            }
+          }
+        });
+    },
   },
-
-  // mounted() {
-  //   console.log(this.currentRouteName);
-  // },
-  // computed: {
-  //   currentRouteName() {
-  //     console.log(this.$route.name);
-  //     return this.$route.name;
-  //   },
-  // },
+  mounted() {},
+  computed: {
+    currentRouteName() {
+      return this.$route.name;
+    },
+  },
 };
 </script>
 

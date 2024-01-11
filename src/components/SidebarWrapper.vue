@@ -55,9 +55,10 @@ export default {
   //     currentRouteName: this.$router.currentRoute.value.path,
   //   };
   // },
-  // mounted() {
-  //   console.log(this.currentRouteName);
-  // },
+  mounted() {
+    console.log("coba di sidebar");
+    console.log(this.$router.currentRoute);
+  },
   computed: {
     currentRouteName() {
       return "/" + this.$router.currentRoute.value.path.split("/")[1];

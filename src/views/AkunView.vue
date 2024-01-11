@@ -162,7 +162,7 @@
                         </div>
                       </td>
                       <td>
-                        <div class="userDatatable-content--priority">5</div>
+                        <div class="userDatatable-content--priority">5¬</div>
                       </td>
                       <td>
                         <div class="userDatatable-content--priority">
