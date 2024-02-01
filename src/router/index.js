@@ -43,6 +43,11 @@ const routes = [
     component: () => import("../views/MateriSKD/IndexView.vue"),
   },
   {
+    path: "/materiskd/tambah",
+    name: "materiskdtambah",
+    component: () => import("../views/MateriSKD/TambahView.vue"),
+  },
+  {
     path: "/akun",
     name: "akun",
     component: () => import("../views/AkunView.vue"),

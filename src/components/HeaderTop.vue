@@ -7,9 +7,9 @@
             <img class="dark" src="/img/logo-kuydinas-2.png" alt="logo" />
             <img class="light" src="/img/logo-kuydinas-2.png" alt="logo" />
           </router-link>
-          <a href="#" @click="expanded()" class="sidebar-toggle">
-            <img class="svg" src="/img/svg/align-center-alt.svg" alt="img"
-          /></a>
+          <button @click="expanded()" class="sidebar-toggle border-0">
+            <img class="svg" src="/img/svg/align-center-alt.svg" alt="img" />
+          </button>
         </div>
       </div>
       <!-- ends: navbar-left -->

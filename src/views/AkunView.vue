@@ -162,7 +162,9 @@
                         </div>
                       </td>
                       <td>
-                        <div class="userDatatable-content--priority">5¬</div>
+                        <div class="userDatatable-content--priority">
+                          {{ dakun.tryoutdiikuti }}
+                        </div>
                       </td>
                       <td>
                         <div class="userDatatable-content--priority">
@@ -249,7 +251,7 @@ export default {
     };
   },
   mounted() {
-    axios.get(this.http + "/api/getakun").then((response) => {
+    axios.get(this.http + "/api/getsemuaakun").then((response) => {
       console.log(response.data);
       this.akuns = response.data;
     });

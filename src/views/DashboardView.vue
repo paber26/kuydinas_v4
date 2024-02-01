@@ -54,7 +54,7 @@
               >
                 <div class="ap-po-details__titlebar">
                   <p>Total Akun</p>
-                  <h1>30,825</h1>
+                  <h1>{{ totalakun }}</h1>
                   <div class="ap-po-details-time">
                     <span class="color-success"
                       ><i class="las la-arrow-up"></i>
@@ -448,11 +448,24 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   props: {
     expanded: Boolean,
   },
+  data() {
+    return {
+      totalakun: "-",
+    };
+  },
+  mounted() {
+    axios.get(this.http + "/api/gettotalakun  ").then((response) => {
+      console.log(response.data);
+      this.totalakun = response.data;
+      // this.soals = response.data[1];
+      // this.totalsoal = this.soals.length;
+    });
+  },
 };
 </script>
-
-<style></style>
