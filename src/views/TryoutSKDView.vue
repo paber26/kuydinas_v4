@@ -162,20 +162,26 @@
                         </div>
                       </td>
                       <td>
-                        <a
-                          href="#"
-                          class="userDatatable-content d-inline-block"
+                        <button
+                          v-if="tskd.status == 'enabled'"
+                          @click.prevent="nonaktifkan(tskd.eid)"
+                          class="userDatatable-content d-inline-block border-0 bg-none"
                         >
                           <span
-                            class="userDatatable-content-status"
-                            :class="
-                              tskd.status == 'enabled'
-                                ? 'bg-opacity-success color-success'
-                                : 'bg-opacity-danger color-danger'
-                            "
+                            class="userDatatable-content-status bg-opacity-success color-success"
                             >{{ tskd.status }}</span
                           >
-                        </a>
+                        </button>
+                        <button
+                          v-else-if="tskd.status == 'disabled'"
+                          @click.prevent="aktifkan(tskd.eid)"
+                          class="userDatatable-content d-inline-block border-0 bg-none"
+                        >
+                          <span
+                            class="userDatatable-content-status bg-opacity-danger color-danger"
+                            >{{ tskd.status }}</span
+                          >
+                        </button>
                       </td>
                       <td>
                         <ul
@@ -479,11 +485,27 @@ export default {
     };
   },
   mounted() {
-    axios.get(this.http + "/api/tryoutskd").then((response) => {
-      this.tryoutskd = response.data;
-      console.log(response.data);
-    });
-    console.log(this.http);
+    this.gettryoutskd();
+  },
+  methods: {
+    aktifkan(eid) {
+      console.log(eid);
+      axios.put(this.http + "/api/tryoutskd/aktifkan/" + eid).then(() => {
+        // console.log(response.data);
+        this.gettryoutskd();
+      });
+    },
+    nonaktifkan(eid) {
+      axios.put(this.http + "/api/tryoutskd/nonaktifkan/" + eid).then(() => {
+        // console.log(response.data);
+        this.gettryoutskd();
+      });
+    },
+    gettryoutskd() {
+      axios.get(this.http + "/api/tryoutskd").then((response) => {
+        this.tryoutskd = response.data;
+      });
+    },
   },
 };
 </script>

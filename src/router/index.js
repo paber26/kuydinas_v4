@@ -48,6 +48,18 @@ const routes = [
     component: () => import("../views/MateriSKD/TambahView.vue"),
   },
   {
+    path: "/materiskd/edit/:id",
+    name: "materiskdedit",
+    component: () => import("../views/MateriSKD/EditView.vue"),
+    props: true,
+  },
+  {
+    path: "/materiskd/lihat/:id",
+    name: "materiskdlihat",
+    component: () => import("../views/MateriSKD/LihatView.vue"),
+    props: true,
+  },
+  {
     path: "/akun",
     name: "akun",
     component: () => import("../views/AkunView.vue"),
@@ -55,7 +67,7 @@ const routes = [
   {
     path: "/testimoni",
     name: "testimoni",
-    component: () => import("../views/AkunView.vue"),
+    component: () => import("../views/TestimoniView.vue"),
   },
   {
     path: "/inbox",

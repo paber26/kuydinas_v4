@@ -23,7 +23,7 @@ const app = createApp(App)
   .use(router);
 
 // app.config.globalProperties.http = "https://backend.kuydinas.id";
-app.config.globalProperties.http = "http://127.0.0.1:8001";
+app.config.globalProperties.http = "http://127.0.0.1:8000";
 
 app.mount("#app");
 

@@ -45,11 +45,10 @@
                       >
                     </div>
                     <div class="col-sm-9">
-                      <input
-                        type="text"
+                      <span
                         class="form-control ih-medium ip-light radius-xs b-light px-15"
-                        v-model="detailblog.judul"
-                      />
+                        v-html="detailblog.judul"
+                      ></span>
                     </div>
                   </div>
 
@@ -61,15 +60,10 @@
                       >
                     </div>
                     <div class="col-sm-9">
-                      <select
-                        v-model="detailblog.kategori"
+                      <span
                         class="form-control ih-medium ip-light radius-xs b-light px-15"
-                      >
-                        <option value="-">Pilih Kategori</option>
-                        <option value="twk">TWK</option>
-                        <option value="tiu">TIU</option>
-                        <option value="tkp">TKP</option>
-                      </select>
+                        v-html="detailblog.kategori"
+                      ></span>
                     </div>
                   </div>
                   <div class="form-group row">
@@ -80,24 +74,22 @@
                       >
                     </div>
                     <div class="col-sm-9">
-                      <textarea
-                        type="text"
-                        class="form-control ip-light radius-xs b-light"
-                        rows="20"
-                        v-model="detailblog.isi"
-                      ></textarea>
+                      <span
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-html="detailblog.isi"
+                      ></span>
                     </div>
                   </div>
                 </div>
                 <div
                   class="button-group d-flex pt-sm-25 justify-content-md-end justify-content-start"
                 >
-                  <button
-                    @click.prevent="simpandanlanjutkan()"
+                  <router-link
+                    to="/materiskd"
                     class="btn btn-primary btn-default btn-squared text-capitalize radius-md shadow2 btn-sm"
                   >
-                    Simpan &amp; Lihat
-                  </button>
+                    Kembali
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -125,40 +117,12 @@ export default {
     };
   },
   mounted() {
-    console.log(this.id);
     axios
       .get(this.http + "/api/getdetailmateriskd/" + this.id)
       .then((response) => {
         // this.detailblog.judul = response.data.judul
         this.detailblog = response.data;
-        console.log(response.data);
       });
-  },
-  methods: {
-    simpandanlanjutkan() {
-      console.log(this.detailblog);
-      if (
-        this.detailblog.judul == "" &&
-        this.detailblog.kategori == "-" &&
-        this.detailblog.isi == ""
-      ) {
-        // this.$swal("Belum lengkap");
-        console.log("belum lengkap");
-        return;
-      } else {
-        console.log("coba jo");
-        axios
-          .post(this.http + "/api/updatemateriskd", this.detailblog)
-          .then((response) => {
-            //   this.tryoutskd = response.data;
-            console.log(response.data);
-            if (response.data == "berhasil") {
-              this.$router.push("/materiskd");
-            }
-          });
-      }
-      //   console.log(this.detailblog);
-    },
   },
 };
 </script>

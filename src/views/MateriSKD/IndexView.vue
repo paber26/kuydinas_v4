@@ -136,12 +136,8 @@
                     <tr v-for="(mskd, index) in materiskd" :key="mskd.eid">
                       <td>{{ index + 1 }}</td>
                       <td>
-                        <div class="d-flex">
-                          <div class="userDatatable-inline-title">
-                            <a href="#" class="text-dark fw-500">
-                              <h6>{{ mskd.kategori }}</h6>
-                            </a>
-                          </div>
+                        <div class="userDatatable-content--subject">
+                          {{ mskd.kategori }}
                         </div>
                       </td>
                       <td>
@@ -187,7 +183,7 @@
                         >
                           <li>
                             <router-link
-                              :to="'/tryoutskd/lihat/sd'"
+                              :to="'/materiskd/lihat/' + mskd.id"
                               class="view"
                             >
                               <i class="uil uil-eye"></i>
@@ -195,7 +191,7 @@
                           </li>
                           <li>
                             <router-link
-                              :to="'/tryoutskd/edit/sd'"
+                              :to="'/materiskd/edit/' + mskd.id"
                               class="edit"
                             >
                               <i class="uil uil-edit"></i>
