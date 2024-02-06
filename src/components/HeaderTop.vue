@@ -43,11 +43,6 @@
                         >
                       </li>
                       <li>
-                        <router-link to="/dompet">
-                          <i class="uil uil-wallet"></i> Dompet</router-link
-                        >
-                      </li>
-                      <li>
                         <a href=""> <i class="uil uil-bell"></i> Try Out</a>
                       </li>
                     </ul>

@@ -80,6 +80,34 @@
                       ></span>
                     </div>
                   </div>
+                  <div class="form-group row">
+                    <div class="col-sm-3">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Link Gambar</label
+                      >
+                    </div>
+                    <div class="col-sm-9">
+                      <span
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-html="detailblog.gambar"
+                      ></span>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-3 d-flex aling-items-center">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Ringkasan</label
+                      >
+                    </div>
+                    <div class="col-sm-9">
+                      <span
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-html="detailblog.ringkasan"
+                      ></span>
+                    </div>
+                  </div>
                 </div>
                 <div
                   class="button-group d-flex pt-sm-25 justify-content-md-end justify-content-start"
@@ -126,5 +154,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

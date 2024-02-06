@@ -9,12 +9,12 @@ import vue3GoogleLogin from "vue3-google-login";
 //   "680808063415-hpjnhrefo7bgnc2qqjvvbdc1fd8j7ljn.apps.googleusercontent.com";
 // 680808063415 - gllqvjohfqmg9vf8u1ka9pklm4ufsel6.apps.googleusercontent.com;
 // back end kuy dinas
-const CLIENT_ID =
-  "680808063415-gllqvjohfqmg9vf8u1ka9pklm4ufsel6.apps.googleusercontent.com";
+// const CLIENT_ID =
+//   "680808063415-gllqvjohfqmg9vf8u1ka9pklm4ufsel6.apps.googleusercontent.com";
 
 // development
-// const CLIENT_ID =
-//   "496074641389-eoemi6a9uu2ochbqq5dmbf7frufpjcaj.apps.googleusercontent.com";
+const CLIENT_ID =
+  "496074641389-eoemi6a9uu2ochbqq5dmbf7frufpjcaj.apps.googleusercontent.com";
 
 const app = createApp(App)
   .use(vue3GoogleLogin, {

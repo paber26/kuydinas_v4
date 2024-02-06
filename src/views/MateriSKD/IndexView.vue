@@ -259,9 +259,7 @@
 import axios from "axios";
 
 export default {
-  props: {
-    expanded: Boolean,
-  },
+  props: ["expanded"],
   data() {
     return {
       materiskd: [],

@@ -57,6 +57,22 @@
                     <div class="col-sm-3 d-flex aling-items-center">
                       <label
                         class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Rute Link</label
+                      >
+                    </div>
+                    <div class="col-sm-9">
+                      <input
+                        type="text"
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-model="detailblog.rute_link"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-3 d-flex aling-items-center">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
                         >Kategori</label
                       >
                     </div>
@@ -86,6 +102,38 @@
                         rows="20"
                         v-model="detailblog.isi"
                       ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-3 d-flex aling-items-center">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Link Gambar</label
+                      >
+                    </div>
+                    <div class="col-sm-9">
+                      <input
+                        type="text"
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-model="detailblog.gambar"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <div class="col-sm-3 d-flex aling-items-center">
+                      <label
+                        class="col-form-label color-dark fs-14 fw-500 align-center"
+                        >Ringkasan</label
+                      >
+                    </div>
+                    <div class="col-sm-9">
+                      <input
+                        type="text"
+                        class="form-control ih-medium ip-light radius-xs b-light px-15"
+                        v-model="detailblog.ringkasan"
+                      />
                     </div>
                   </div>
                 </div>
@@ -121,8 +169,11 @@ export default {
     return {
       detailblog: {
         judul: "",
+        rute_link: "",
         kategori: "-",
         isi: "",
+        gambar: "",
+        ringkasan: "",
       },
     };
   },
@@ -131,7 +182,9 @@ export default {
       if (
         this.detailblog.judul == "" &&
         this.detailblog.kategori == "-" &&
-        this.detailblog.isi == ""
+        this.detailblog.isi == "" &&
+        this.detailblog.gambar == "" &&
+        this.detailblog.ringkasan == ""
       ) {
         // this.$swal("Belum lengkap");
         console.log("belum lengkap");
